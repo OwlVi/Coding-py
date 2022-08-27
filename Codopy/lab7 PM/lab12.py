@@ -6,6 +6,7 @@ while True:
 #input
     x = int(input())
     y = int(input())
+#procress
     if (x < 1 or y < 1) or (x > 6 or y > 6):
         count -= 1
         print(f'ERROR')
@@ -27,5 +28,5 @@ while True:
             if sxy == 7 :
                 result = "L"
                 break
-        
+#output
 print(f'{count} {sxy} {result}')
