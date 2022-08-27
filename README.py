@@ -1,3 +1,2 @@
 # Coding-py
-private 
-
+ขอเซ็ทหย่อ
