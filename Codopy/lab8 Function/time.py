@@ -1,4 +1,3 @@
-# time def
 
 def read_hour():
     h = int(input("Enter hour: "))
@@ -23,10 +22,10 @@ def to_seconds(h, m, s):
     return sumtime
 
 def time_elapsed(start, finish):
-    finish -= start
-    h = (finish//60//24)
-    m = (finish//60)
-    s = (finish%60)
+    t = finish - start
+    h = (t//60//24)
+    m = (t//60)
+    s = (t%60)
     time = f"{h} hours {m} minutes {s} seconds."
     return time
 
