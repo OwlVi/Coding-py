@@ -11,7 +11,7 @@ else:
     while True:
         if x > n :
             while True:
-                x -= 1
+                x -= 1    # x = x - 1 
                 count += 1
                 if x == n:
                     break
