@@ -1,3 +1,4 @@
+#circle def
 def circle (r):
     import math
     area = math.pi*(r**2)
@@ -12,3 +13,7 @@ def sphere (r):
     import math
     volu = (4/3)*math.pi*(r**3)
     return volu
+r = float(input("Enter a radius: "))
+print('Area of a circle with radius %.2f is %.2f.' % (r, circle(r)))
+print('Circumference of a circle with radius %.2f is %.2f.' % (r, circumference(r)))
+print('Volume of sphere with radius %.2f is %.2f.' % (r, sphere(r))) 
