@@ -6,7 +6,7 @@ n = int(input())
 nlk = n
 a = 1
 i = 0
-while a < n:
+while a < n: # True
     b = 1
     while True:
             if b <= n:
