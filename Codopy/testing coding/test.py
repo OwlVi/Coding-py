@@ -1,18 +1,22 @@
+word = input()
+original = ''
+n = 0
+count = 0
 
-student=["somchai","somying"]
-subject=["datacom","os","comarch"]
-#สร้าง dict เก็บคะแนนวิชานิสิต
-score_subj={}
-#วน loop นักเรียน
-for stud in student:
-    print (stud)
-    score_stud = {}
-    for subj in subject: # วนลูปรับคะแนนแต่ละวิชา
-        score_stud[subj] = int(input(f'{subj} = '))
-    score_subj[stud] = score_stud
-    print("-"*5)
-print(score_subj)
-#เลือกรายชื่อนิสิต
-sel_stud = input('Select Nisit : ')
-dict_stud = score_subj[sel_stud]
-print(dict_stud)
+for i in word :
+  if count != n :
+    count += 1
+    continue
+  if count + 2 < len(word) :
+    if word[n] == word[n+2] and word[n] in 'aeiou' and word[n+1] == 'p' :
+      original += i
+      n += 3
+    else :
+      original += i
+      n += 1
+  else :
+    original += i
+    n += 1
+  count += 1
+    
+print(original)
