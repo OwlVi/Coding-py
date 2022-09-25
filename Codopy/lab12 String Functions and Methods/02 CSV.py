@@ -1,7 +1,7 @@
 # CSV
 
 text = input()
-text = text.split()
+text = text.split(",")
 lst = ''
 count = 0
 for i in text:
