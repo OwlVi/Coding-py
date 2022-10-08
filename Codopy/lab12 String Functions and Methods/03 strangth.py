@@ -5,12 +5,28 @@ llst = []
 
 #Input
 while True:
-    text = input()
-    if text == '-1':
+    txt = input()
+    if txt == '-1':
         break
-    text = text.split("=",1)
-    rlst.append(text[1].strip())
-    llst.append(text[0].strip())
+    lst = []
+    word = 0
+    fword = 0
+    for i in txt:
+        if i.isalnum():
+            word += 1
+            continue
+        elif i in ' ':
+            word += 1
+            continue
+        elif i in f'=' and fword == 0:
+            word += 1
+            lst.append(txt[fword:word-1].strip())
+            fword = word
+    lst.append(txt[fword:len(txt)].strip())
+    
+    rlst.append(lst[1].strip())
+    llst.append(lst[0].strip())
+    
 x = 0
 for i in range(len(llst)) :
     if len(llst[i]) > x:
