@@ -1,5 +1,3 @@
-my_str = ' '
+d = lambda x,y: x - 1 + y
 
-result = float(my_str.strip() or 0)
-
-print(result)  # 👉️ 0.0
+print(d(5,2))
