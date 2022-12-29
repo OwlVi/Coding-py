@@ -10,7 +10,7 @@ int main(){
     //process
     while ( yenchar >= 0){
         //output
-        printf("%d\n",yenchar);
+        printf("%d \n",yenchar);
         yenchar = yenchar - 1;
     }
 }   
