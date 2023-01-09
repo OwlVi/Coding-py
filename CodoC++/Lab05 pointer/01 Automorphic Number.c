@@ -14,7 +14,6 @@ int main(){
         countk++;
     }
 
-
     for (i = number*number, j= number ; i >= 1 && j != 0; i = i/10, j /= 10){
         if ((j)%10 == (i)%10 ){
             count++;
