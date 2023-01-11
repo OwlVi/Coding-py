@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+
 int main(){
     //input
     char size[5],expep[5],exche[5],exmus[5];

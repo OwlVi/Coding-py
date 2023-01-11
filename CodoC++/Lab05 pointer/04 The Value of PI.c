@@ -1,17 +1,14 @@
 #include <stdio.h>
-
 int main(){
-    char input_n[10];
+    double n,Pi = 0;
     printf("Enter n: ");
-    fgets(input_n,sizeof(input_n),stdin);
-    int n = atoi(input_n),count = 0,i,j;
-    long double lcm = 1,Pi = 4,sum = 0;
-    for (i = 1; i <= n ; i += 2){
-        if (i%2){
-            Pi = Pi - (4.0/i);
+    scanf("%lf",&n);
+    for (double i = 0,j = 1 ; i < n ; i++,j += 2){
+        if ((int)i%2){
+            Pi -= (4.0/j);
         }else{
-            Pi = Pi + (4.0/i);
+            Pi += (4.0/j);
         }
     }
-    printf("%.10Lf",Pi);
+    printf("%.10lf",Pi);
 }

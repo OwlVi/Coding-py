@@ -34,5 +34,5 @@ int main() {
 
 void setPieceOnTable(int board[][BOARD_SIZE], char piece, int xPos, int yPos )
 { 
-board[yPos][xPos] = piece;
+    board[yPos][xPos] = piece;
 }
